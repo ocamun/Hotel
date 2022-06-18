@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html >
 <head>
     <title>Ocamun Hotel</title>
 
@@ -15,12 +15,23 @@
 
 <body class="is-preload">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=OUR_GA_ID"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'OUR_GA_ID');
+</script>
+
 <!-- Wrapper -->
 <div id="wrapper">
     <!-- Header -->
     <header id="header" class='alt'  >
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129748127-1"></script>
+
         <script>
 					  window.dataLayer = window.dataLayer || [];
 					  function gtag(){dataLayer.push(arguments);}
@@ -40,9 +51,11 @@
                 <li><a href="#">Register</a></li>
             </ul>
         </nav>
-        <div id="join_us">
-            <br><h1>JOIN US</h1></br>
+        <div id="nuestros-hoteles">
+            <br>
+                <h1>Nuestros hoteles</h1>
         </div>
+        <!-- Mapas -->
         <div id="mapa1">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231705.088991934!2d-1.6680318347625849!3d42.15655102596526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a3bfe320a4671%3A0x528d9b2420714efe!2sBardenas%20Reales!5e0!3m2!1ses!2ses!4v1654797698554!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <h1>Ocamun Bardenas reales</h1>
@@ -55,8 +68,32 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.3534182982066!2d-0.4801032984039794!3d38.35499459068188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x532de7fd730dae8!2zMzjCsDIxJzE4LjMiTiAwwrAyOCc0NS44Ilc!5e0!3m2!1ses!2ses!4v1654798112335!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <h1>Ocamun Alicante</h1>
         </div>
+        <div id="oferta-especial">
+            <H1>OFERTA ESPECIAL</H1>
+        </div>
+        <!-- Temporizador oferta especial -->
+        <div class="cont-temporizador">
+            <div class="bloque">
+                <div class="dias" id="dias">00</div>
+                <p>DÍAS</p>
+            </div>
+            <div class="bloque">
+                <div class="horas" id="horas">--</div>
+                <p>HORAS</p>
+            </div>
+            <div class="bloque">
+                <div class="minutos" id="minutos">--</div>
+                <p>MINUTOS</p>
+            </div>
+            <div class="bloque">
+                <div class="segundos" id="segundos">--</div>
+                <p>SEGUNDOS</p>
+            </div>
+        </div>
+
     </header>
 </div>
+<script src="contador.js"></script>
 
 </body>
 </html>
